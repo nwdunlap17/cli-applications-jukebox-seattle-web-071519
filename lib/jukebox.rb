@@ -40,7 +40,7 @@ def list
   puts songs
 end
 
-def #play(playlist)
+def play(playlist)
   puts "Please enter a song name or number:"
   input = gets.chomp
   if playlist[input] != NIL
