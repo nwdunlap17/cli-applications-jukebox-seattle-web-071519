@@ -13,7 +13,11 @@ end
 def run(songs)
   puts "Please enter a command:"
   input = gets.chomp
-  while true do
+  choose
+end
+
+def choose
+    #while true do
   if input == "help"
     help
   end
@@ -25,14 +29,10 @@ def run(songs)
   end
   if input == "exit"
     exit_jukebox
-    break
+  #  break
   end
-  end
+  #end
 end
-
-def choose
-  
-
 def help
   puts "I accept the following commands:
 - help : displays this help message
