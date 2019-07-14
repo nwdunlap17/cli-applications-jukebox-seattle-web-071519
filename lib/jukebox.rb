@@ -12,7 +12,7 @@ return [
 ]
 end
 
-def juke
+def Jukebox
   input = gets.chomp
   if input == "help"
     help
