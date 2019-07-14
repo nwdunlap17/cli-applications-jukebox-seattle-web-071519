@@ -51,7 +51,7 @@ end
 
 def play(playlist)
   root = "Please enter a song name or number:"
- # puts root
+  puts root
   input = gets
   input = input.chomp
   input = integerize(input)
