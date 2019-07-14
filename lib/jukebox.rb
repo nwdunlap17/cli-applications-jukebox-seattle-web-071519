@@ -58,7 +58,7 @@ end
 
 def integerize(i)
   if i == "1"
-    return 1
+    return 0
   elsif i == "2"
     return 2
   elsif i == "3"
