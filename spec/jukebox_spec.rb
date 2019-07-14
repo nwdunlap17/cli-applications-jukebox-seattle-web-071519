@@ -65,11 +65,6 @@ describe "CLI_Jukebox" do
   end
 
   context "with commands" do
-    it "responds to 'exit'" do
-      allow(self).to receive(:gets).and_return("exit")
-      exit_output = capture_stdout { run(songs) }
-      expect(exit_output).to include("Please enter a command:").and include("Goodbye")
-    end
 
     it "responds to 'help'" do
       allow(self).to receive(:gets).and_return("help", "exit")
@@ -88,6 +83,14 @@ describe "CLI_Jukebox" do
       allow(self).to receive(:gets).and_return("play", "1", "exit")
       list_output = capture_stdout { run(songs) }
       expect(list_output).to include("Please enter a command:").and include("Please enter a song name or number:").and include("Playing Phoenix - 1901")
+      
+    
+    it "responds to 'exit'" do
+      allow(self).to receive(:gets).and_return("exit")
+      exit_output = capture_stdout { run(songs) }
+      expect(exit_output).to include("Please enter a command:").and include("Goodbye")
+    end
+    
     end
 
   end
