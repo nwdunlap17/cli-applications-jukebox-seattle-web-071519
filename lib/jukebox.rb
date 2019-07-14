@@ -14,7 +14,7 @@ def run(songs)
   puts "Please enter a command:"
   input = gets.chomp
   if input == "help"
-    help
+    help_output
   end
   if input == "list"
     list(songs)
@@ -27,7 +27,7 @@ def run(songs)
   end
 end
 
-def help
+def help_output
   puts "I accept the following commands:
 - help : displays this help message
 - list : displays a list of songs you can play
