@@ -41,7 +41,7 @@ def list
 end
 
 def play(playlist)
-  
+  puts 
 end
 
 def exit 
