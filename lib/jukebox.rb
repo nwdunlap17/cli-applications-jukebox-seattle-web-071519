@@ -13,4 +13,18 @@ songs = [
 def juke
   input = gets.chomp
   if input == "help"
+    help
+  end
+  if input == "list"
+    
+  end
+  if input == "play"
+    
+  end
+  if input == "exit"
+    
+  end
 end
+
+def help
+  puts
