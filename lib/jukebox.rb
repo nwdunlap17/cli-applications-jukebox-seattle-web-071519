@@ -12,13 +12,13 @@ end
 
 def run(songs)
   puts "Please enter a command:"
-  input = gets.chomp
   choose
   choose
 end
 
 def choose
     #while true do
+  input = gets.chomp
   if input == "help"
     help
   end
