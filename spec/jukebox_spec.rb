@@ -12,7 +12,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-describe "CLI Jukebox" do
+describe "CLI_Jukebox" do
 
   context "methods" do
     describe "#help" do
@@ -63,7 +63,7 @@ describe "CLI Jukebox" do
       end
     end
   end
-
+  
   context "with commands" do
     it "responds to 'exit'" do
       allow(self).to receive(:gets).and_return("exit")
@@ -75,9 +75,7 @@ describe "CLI Jukebox" do
       allow(self).to receive(:gets).and_return("help", "exit")
       help_output = capture_stdout { run(songs) }
       expect(help_output).to include("help").and include("list").and include("play").and include("exit").and include("Please enter a command:").and include("Goodbye")
-
     end
-
     it "responds to 'list'" do
       allow(self).to receive(:gets).and_return("list", "exit")
       list_output = capture_stdout { run(songs) }
@@ -89,7 +87,6 @@ describe "CLI Jukebox" do
       list_output = capture_stdout { run(songs) }
       expect(list_output).to include("Please enter a command:").and include("Please enter a song name or number:").and include("Playing Phoenix - 1901")
     end
-
   end
 
 end
