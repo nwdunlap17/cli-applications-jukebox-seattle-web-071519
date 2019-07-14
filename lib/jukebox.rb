@@ -58,6 +58,7 @@ def exit_jukebox
 end
 
 def integerize(i)
+  p "integerize"
   if i == "1"
     return 0
   elsif i == "2"
