@@ -18,10 +18,10 @@ def juke
     help
   end
   if input == "list"
-    
+    list
   end
   if input == "play"
-    
+    play(songs)
   end
   if input == "exit"
     
@@ -40,7 +40,7 @@ def list
   puts songs
 end
 
-def play
+def play(playlist)
   
 end
 
