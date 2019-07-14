@@ -1,4 +1,4 @@
-def blah
+def songs
 return ["Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
