@@ -55,7 +55,6 @@ def play(playlist)
   input = gets
   input = input.chomp
   input = integerize(input)
-  p "input is #{input}"
   if playlist[input] != nil
     puts "Playing #{playlist[input]}"
   elsif
