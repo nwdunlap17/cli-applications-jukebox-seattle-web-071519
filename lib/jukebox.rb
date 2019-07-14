@@ -47,3 +47,5 @@ end
 def exit 
   
 end
+
+list
