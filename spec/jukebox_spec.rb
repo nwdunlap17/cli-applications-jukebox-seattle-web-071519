@@ -82,13 +82,11 @@ describe "CLI_Jukebox" do
       expect(list_output).to include("Please enter a command:").and include("1. Phoenix - 1901").and include("9. Amos Lee - Keep It Loose, Keep It Tight")
     end
 
-=begin
     it "responds to 'play'" do
       allow(self).to receive(:gets).and_return("play", "1", "exit")
       list_output = capture_stdout { run(songs) }
       expect(list_output).to include("Please enter a command:").and include("Please enter a song name or number:").and include("Playing Phoenix - 1901")
     end
-=end
   end
 
 end
