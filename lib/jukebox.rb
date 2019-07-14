@@ -77,5 +77,7 @@ def integerize(i)
   elsif i == "0"
     return 0
   end
+  
+  jukebox
   return i
 end
