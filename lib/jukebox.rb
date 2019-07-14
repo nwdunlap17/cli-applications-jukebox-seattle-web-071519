@@ -13,7 +13,7 @@ end
 def run(songs)
   puts "Please enter a command:"
   input = gets.chomp
-  #while true do
+  while true do
   if input == "help"
     help
   end
@@ -25,9 +25,9 @@ def run(songs)
   end
   if input == "exit"
     exit_jukebox
-  #  break
+    break
   end
-  #end
+  end
 end
 
 def help
@@ -47,7 +47,6 @@ end
 def play(playlist)
   root = "Please enter a song name or number:"
  # puts root
-  #input = 2
   input = gets
   input = input.chomp
   input = integerize(input)
