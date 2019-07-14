@@ -55,4 +55,4 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-boombox
+p songs
