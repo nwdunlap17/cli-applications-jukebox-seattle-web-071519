@@ -58,7 +58,6 @@ def exit_jukebox
 end
 
 def integerize(i)
-  p "integerize"
   if i == "1"
     return 0
   elsif i == "2"
@@ -78,7 +77,6 @@ def integerize(i)
   elsif i == "9"
     return 8
   end
-  p songs.size
   songs.size.times do |j|
     p songs[j]
     if songs[j] == i 
