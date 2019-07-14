@@ -10,6 +10,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def input
-  
+def juke
+  input = gets.chomp
+  if input == "help"
 end
