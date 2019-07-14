@@ -16,7 +16,7 @@ def jukebox
     help
   end
   if input == "list"
-    list
+    list(songs)
   end
   if input == "play"
     play(songs)
@@ -34,8 +34,8 @@ def help
 - exit : exits this program"
 end
 
-def list
-  puts songs
+def list(list)
+  puts list
 end
 
 def play(playlist)
