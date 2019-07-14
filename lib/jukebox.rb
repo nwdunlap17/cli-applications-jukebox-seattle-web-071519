@@ -53,3 +53,28 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def integerize(i)
+  if i == "1"
+    return 1
+  elsif i == "2"
+    return 2
+  elsif i == "3"
+    return 3
+  elsif i == "4"
+    return 4
+  elsif i == "5"
+    return 5
+  elsif i == "6"
+    return 6
+  elsif i == "7"
+    return 7
+  elsif i == "8"
+    return 8
+  elsif i == "9"
+    return 9
+  elsif i == "0"
+    return 0
+  end
+  return i
+end
