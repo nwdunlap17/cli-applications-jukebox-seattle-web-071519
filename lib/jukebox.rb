@@ -76,5 +76,12 @@ def integerize(i)
   elsif i == "9"
     return 8
   end
-  return i
+  
+  songs.size.times do |j|
+    if songs[j] == i 
+      return i
+    end
+  end
+  
 end
+
