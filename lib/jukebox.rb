@@ -43,7 +43,7 @@ end
 def play(playlist)
   root = "Please enter a song name or number:"
   puts root
-  input = gets.chomp
+  input = gets.chomp.to_i
   if playlist[input] != nil
     puts "Playing #{playlist[input]}"
   elsif
