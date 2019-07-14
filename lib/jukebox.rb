@@ -43,6 +43,7 @@ def play(playlist)
  # puts root
   #input = 2
   input = gets.chomp
+  input = integerize(input)
   if playlist[input] != nil
     puts "Playing #{playlist[input]}"
   elsif
