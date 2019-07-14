@@ -55,4 +55,4 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-CLI_Jukebox
+Jukebox
