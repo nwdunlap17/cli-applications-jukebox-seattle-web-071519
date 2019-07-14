@@ -24,7 +24,7 @@ def CLI_Jukebox
     play(songs)
   end
   if input == "exit"
-    
+    exit_jukebox
   end
 end
 
@@ -44,7 +44,7 @@ def play(playlist)
   root = "Please enter a song name or number:"
   puts root
   input = gets.chomp
-  if playlist[input] != NIL
+  if playlist[input] != nil
     puts "Playing #{playlist[input]}"
   elsif
     puts "Invalid input, please try again"
@@ -54,3 +54,5 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+CLI_Jukebox
