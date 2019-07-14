@@ -30,6 +30,9 @@ def run(songs)
   end
 end
 
+def choose
+  
+
 def help
   puts "I accept the following commands:
 - help : displays this help message
