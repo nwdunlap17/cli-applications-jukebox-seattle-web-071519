@@ -12,7 +12,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-describe "CLI Jukebox" do
+describe "CLI_Jukebox" do
 
   context "methods" do
     describe "#help" do
