@@ -78,7 +78,7 @@ def integerize(i)
   elsif i == "9"
     return 8
   end
-  
+  p songs.size
   songs.size.times do |j|
     p songs[j]
     if songs[j] == i 
