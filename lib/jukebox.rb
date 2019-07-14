@@ -40,7 +40,7 @@ end
 
 def play(playlist)
   root = "Please enter a song name or number:"
-  puts root
+ # puts root
   #input = 2
   input = gets.chomp
   if playlist[input] != nil
