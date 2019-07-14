@@ -12,7 +12,7 @@ return [
 ]
 end
 
-def Jukebox
+def boombox
   input = gets.chomp
   if input == "help"
     help
@@ -54,5 +54,3 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
-
-Jukebox
