@@ -79,10 +79,9 @@ def integerize(i)
   end
   songs.size.times do |j|
     if songs[j] == i 
-      return i
+      return j
     end
   end
-  
 end
 
 #jukebox
