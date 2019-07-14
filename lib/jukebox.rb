@@ -35,7 +35,7 @@ def help
 end
 
 def list
-  
+  puts songs
 end
 
 def play
@@ -45,3 +45,5 @@ end
 def exit 
   
 end
+
+list
