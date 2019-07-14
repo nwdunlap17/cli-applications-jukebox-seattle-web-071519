@@ -12,8 +12,24 @@ end
 
 def run(songs)
   puts "Please enter a command:"
-  choose
-  choose
+  #choose
+  #choose
+      #while true do
+  input = gets.chomp
+  if input == "help"
+    help
+  end
+  if input == "list"
+    list(songs)
+  end
+  if input == "play"
+    play(songs)
+  end
+  if input == "exit"
+    exit_jukebox
+    break
+  end
+  #end
 end
 
 def choose
