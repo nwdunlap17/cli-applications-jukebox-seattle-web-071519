@@ -41,7 +41,8 @@ def list
 end
 
 def play(playlist)
-  puts "Please enter a song name or number:"
+  root = "Please enter a song name or number:"
+  puts root
   input = gets.chomp
   if playlist[input] != NIL
     puts "Playing #{playlist[input]}"
