@@ -1,6 +1,5 @@
 def songs
-return [
-  "Phoenix - 1901",
+return ["Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
   "The Naked and the Famous - Young Blood",
@@ -8,8 +7,7 @@ return [
   "The Cults - Abducted",
   "Phoenix - Consolation Prizes",
   "Harry Chapin - Cats in the Cradle",
-  "Amos Lee - Keep It Loose, Keep It Tight"
-]
+  "Amos Lee - Keep It Loose, Keep It Tight"]
 end
 
 def jukebox
@@ -43,8 +41,8 @@ end
 def play(playlist)
   root = "Please enter a song name or number:"
   puts root
-  input = 2
-  #input = gets.chomp
+  #input = 2
+  input = gets.chomp
   if playlist[input] != nil
     puts "Playing #{playlist[input]}"
   elsif
