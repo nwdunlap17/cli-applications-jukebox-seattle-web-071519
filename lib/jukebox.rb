@@ -42,7 +42,8 @@ def play(playlist)
   root = "Please enter a song name or number:"
  # puts root
   #input = 2
-  input = gets.chomp
+  input = gets
+  input = input.chomp
   input = integerize(input)
   if playlist[input] != nil
     puts "Playing #{playlist[input]}"
@@ -79,5 +80,3 @@ def integerize(i)
   end
   return i
 end
-  
-  jukebox
