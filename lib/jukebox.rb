@@ -34,8 +34,10 @@ def help
 - exit : exits this program"
 end
 
-def list(list)
-  puts list
+def list(playlist)
+  playlist.size.times do |i|
+    puts "#{i}. #{playlist[i]}"
+  end
 end
 
 def play(playlist)
