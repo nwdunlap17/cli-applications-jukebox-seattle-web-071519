@@ -44,7 +44,7 @@ def play(playlist)
   puts "Please enter a song name or number:"
   input = gets.chomp
   if songs[input] != NIL
-    puts "Playing #{songs[input}"
+    puts "Playing #{songs[input]}"
   elsif
     puts "Invalid input, please try again"
   end
