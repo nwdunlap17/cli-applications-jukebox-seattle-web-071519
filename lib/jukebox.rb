@@ -12,7 +12,7 @@ return [
 ]
 end
 
-def CLI_Jukebox
+def CLI Jukebox
   input = gets.chomp
   if input == "help"
     help
