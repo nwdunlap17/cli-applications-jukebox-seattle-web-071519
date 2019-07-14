@@ -1,4 +1,4 @@
-def songs
+def blah
 return ["Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
@@ -10,7 +10,7 @@ return ["Phoenix - 1901",
   "Amos Lee - Keep It Loose, Keep It Tight"]
 end
 
-def jukebox
+def run(songs)
   input = gets.chomp
   if input == "help"
     help
