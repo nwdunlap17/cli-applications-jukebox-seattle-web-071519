@@ -70,12 +70,12 @@ describe "CLI_Jukebox" do
       exit_output = capture_stdout { run(songs) }
       expect(exit_output).to include("Please enter a command:").and include("Goodbye")
     end
-=begin
+
     it "responds to 'help'" do
       allow(self).to receive(:gets).and_return("help", "exit")
       help_output = capture_stdout { run(songs) }
       expect(help_output).to include("help").and include("list").and include("play").and include("exit").and include("Please enter a command:").and include("Goodbye")
-
+=begin
     end
 
     it "responds to 'list'" do
