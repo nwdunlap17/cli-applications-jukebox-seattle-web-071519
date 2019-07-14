@@ -36,7 +36,7 @@ end
 
 def list(playlist)
   playlist.size.times do |i|
-    puts "#{i}. #{playlist[i]}"
+    puts "#{i+1}. #{playlist[i]}"
   end
 end
 
