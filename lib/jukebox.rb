@@ -11,6 +11,7 @@ return ["Phoenix - 1901",
 end
 
 def run(songs)
+  "Please enter a command:"
   input = gets.chomp
   if input == "help"
     help
